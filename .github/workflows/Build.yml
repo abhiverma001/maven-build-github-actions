@@ -38,3 +38,4 @@ jobs:
       - name: Step5 - What is the target directory?
         run:
            cd target
+           ll
