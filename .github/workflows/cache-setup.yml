@@ -31,8 +31,8 @@ jobs:
       - name: Step3 - Have github action built maven project
         run: mvn -B package --file pom.xml
 
-      - name: Step4 - Setup chache for Maven
-        uses: actions/chache@v2
+      - name: Step4 - Setup cache for Maven
+        uses: actions/cache@v2
         with:
            path: ~/.m2
            key: ${{runner.os}}-m2-${{hashfiles('**/pom.xml')}}
