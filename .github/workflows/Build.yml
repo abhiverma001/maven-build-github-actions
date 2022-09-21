@@ -36,6 +36,6 @@ jobs:
         run: ls -a
 
       - name: Step5 - What is the target directory?
-        run:
+        run: | 
            cd target
-           ll
+           ls -a
