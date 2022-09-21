@@ -28,7 +28,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
            java-version: 1.8
-           
+
       - name: Step3 - Have github action built maven project
         run: mvn -B package --file pom.xml
 
@@ -37,5 +37,4 @@ jobs:
 
       - name: Step5 - What is the target directory?
         run:
-           cd target
-           ls -a
+           cd target & ls -a
